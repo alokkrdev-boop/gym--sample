@@ -1,5 +1,5 @@
 import React from 'react';
-import './testimonials.css';
+import './Testimonials.css';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 
 const Testimonials = () => {
