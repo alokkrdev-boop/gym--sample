@@ -1,0 +1,35 @@
+/* --- Master Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Elements ko screen ke bahar nikalne se rokta hai */
+  -webkit-tap-highlight-color: transparent; /* Mobile touch highlight remove */
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Sabse important: Right-to-Left scroll band */
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  /* Mobile par side scroll ko bilkul block karne ke liye */
+  touch-action: pan-y; 
+}
+
+/* Scrollbar styling (Premium Look) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff3131;
+  border-radius: 10px;
+}

@@ -1,0 +1,174 @@
+.navbar {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s ease;
+  background: transparent; /* Shuru me transparent */
+  padding: 0 20px;
+}
+
+/* Scroll hone par ye style apply hoga */
+.navbar.active-scroll {
+  height: 70px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  border-bottom: 1px solid rgba(255, 49, 49, 0.2);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span { color: #ff3131; }
+
+.nav-links {
+  display: none; /* Desktop only */
+  list-style: none;
+}
+
+.nav-links li { margin: 0 20px; }
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover { color: #ff3131; }
+
+.join-btn {
+  display: none;
+  background: #ff3131;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 49, 49, 0.4);
+}
+
+.mobile-toggle {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* --- Mobile View Settings --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.mobile-menu.open { right: 0; }
+
+.mobile-menu ul {
+  text-align: center;
+  list-style: none;
+}
+
+.mobile-menu li { margin: 30px 0; }
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* Tablet & Laptop Adjustments */
+@media screen and (min-width: 992px) {
+  .nav-links, .join-btn { display: flex; }
+  .mobile-toggle { display: none; }
+}
+
+/* Mobile Toggle Icon */
+.mobile-toggle {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2000; /* Isse cross icon hamesha menu ke upar dikhega */
+  position: relative;
+}
+
+.close-icon {
+  color: #ff3131; /* Cross icon ko Red rakhein taaki wo alag dikhe */
+  position: fixed; /* Jab menu khule toh ye fixed rahe */
+  right: 20px;
+  top: 30px;
+}
+
+/* Mobile Menu Sidebar */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #000; /* Pure black for premium look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  z-index: 1500; /* Navbar se thoda niche lekin content se upar */
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 25px 0;
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: #ff3131;
+}
+
+/* Desktop pe hide toggle */
+@media screen and (min-width: 992px) {
+  .mobile-toggle {
+    display: none;
+  }
+}

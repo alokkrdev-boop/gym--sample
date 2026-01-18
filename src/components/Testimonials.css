@@ -1,0 +1,81 @@
+.test-container {
+  padding: 60px 20px;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+
+.test-header p {
+  color: #ff3131;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.test-header h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.test-header h2 span {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.test-grid {
+  display: flex;
+  flex-direction: column; /* Mobile stack */
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.test-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  border-left: 2px solid #ff3131;
+  transition: 0.3s;
+}
+
+.test-card:hover {
+  background: #1a1a1a;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.test-text {
+  color: #ccc;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.test-footer h4 {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.test-footer small {
+  color: #ff3131;
+  font-weight: 600;
+}
+
+/* PC Responsive Layout */
+@media screen and (min-width: 768px) {
+  .test-grid {
+    flex-direction: row; /* PC side-by-side */
+  }
+  .test-card {
+    flex: 1;
+  }
+}

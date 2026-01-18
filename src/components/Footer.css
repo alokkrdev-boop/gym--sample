@@ -1,0 +1,55 @@
+.footer {
+  padding: 50px 20px;
+  background-color: #000;
+  border-top: 1px solid #222;
+  text-align: center;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.footer-logo span {
+  color: #ff3131;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.footer-socials a {
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ff3131;
+  transform: translateY(-5px);
+}
+
+.footer-links p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 5px 0;
+  letter-spacing: 1px;
+}
+
+/* For Mobile: Padding thoda kam kar dete hain */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 40px 10px;
+  }
+}
