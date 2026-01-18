@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css'; // CSS file ko import kiya
+import './Footer.css'; // CSS file ko import kiya
 import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
